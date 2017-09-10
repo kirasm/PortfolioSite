@@ -1,4 +1,8 @@
-
+html, body {
+  height: 100%;
+  min-height: 100%;
+  position:relative;
+}
 
 
 .text-box h3{
@@ -8,8 +12,8 @@
   opacity: 1;
   font-size: 2vw;
   bottom: 0.3vw;
-
 }
+
 
 
 .text-box {
@@ -62,7 +66,7 @@
 }
 
 .icons img {
-  padding: 10px, 10px, 10px, 10px;
+  padding: 10px 10px 10px 10px;
   height: 30px;
   width: 30px;
 }
@@ -182,10 +186,22 @@ height: 30vw;
   margin-top: 20px;
   text-align: center;
   background-color: #c0392b;
+  position: absolute;
+  width: 100%;
 }
 
 .footer h4 {
   color: white;
+}
+
+.aboutme {
+  text-align: center;
+  color: white;
+  min-height: 20vw;
+  background-color: #c0392b;
+  min-width: 100%;
+}
+.aboutme h1 {
 }
 
 @media screen and (max-width: 1081px) {
