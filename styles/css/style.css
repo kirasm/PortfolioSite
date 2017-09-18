@@ -5,6 +5,8 @@ html, body {
   margin: 0px;
   padding: 0px;
 
+  position: relative;
+
   font-family: 'Lato', sans-serif;
   box-sizing: border-box;
 }
@@ -34,8 +36,16 @@ img {
   padding: 0;
   margin: 0;
 
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px;
+
 }
 
+.container-fluid:after {
+  content: "";
+  display: block;
+}
 
 .text-box h3{
   position: relative;
@@ -117,7 +127,7 @@ img {
 
 
 .cardFooter {
-  margin-left: 39.3vw;
+  margin-left: 39.6vw;
   margin-top: 10vw;
   background-color: white;
   width: 20vw;
@@ -224,16 +234,20 @@ img {
 }
 
 .footer {
-  margin-top: 20px;
   text-align: center;
   background-color: #c0392b;
-  position: absolute;
   width: 100%;
+  bottom: 0;
+  height: 50px;
+  overflow:hidden;
 }
 
 .footer h4 {
   color: white;
+
 }
+
+
 
 .aboutme {
   text-align: center;
@@ -278,6 +292,140 @@ img {
 
 @media screen and (max-width: 1081px) {
 
+  .project-caroussel {
+    height: 50vw;
+  }
+
+  .text-box {
+    top: 40vw;
+    width: 40vw;
+    height: 6vw;
+    left: 32vw;
+  }
+  .text-box h3 {
+    font-size: 3vw;
+  }
+
+
+  .side-image-right {
+    height: 20vw;
+    float: left;
+    margin-left: 42vw;
+    margin-top: 5vw;
+    padding: 0;
+  }
+
+  h1#projTitle {
+    font-size: 5vw;
+  }
+
+  p#projParagraph {
+    font-size: 2.5vw;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-bottom: 5vw;
+    margin-top: 5vw;
+    line-height: 4vw;
+  }
+
+  .side-image-left {
+    margin-top: 2vw;
+    margin-left: 22vw;
+    height: 20vw;
+  }
+
+  h1#probTitle {
+    font-size: 5vw;
+    margin-top: 24vw;
+    margin-left: 33vw;
+  }
+
+  p#probParagraph {
+    font-size: 2.5vw;
+    margin-top: 3vw;
+    margin-left: 5vw;
+    margin-right: 0;
+    margin-bottom: 5vw;
+    width: 90vw;
+    line-height: 4vw;
+
+  }
+
+  h1#lessonTitle {
+    font-size: 5vw;
+    margin-top: 28vw;
+    margin-left: 33vw;
+
+  }
+
+  p#lessonParagraph {
+    font-size: 2.5vw;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-bottom: 5vw;
+    margin-top: 5vw;
+    line-height: 4vw;
+  }
+
+
+
+  .project-title h1 {
+    font-size: 4vw;
+    float: left;
+    margin-left: 40vw;
+  }
+  .aboutme {
+
+    height: 50vw;
+
+  }
+
+  .roundpic {
+    float: left;
+    height: 27vw;
+    margin-left: 5vw;
+    margin-top: 10vw;
+  }
+
+  .aboutme h1 {
+    font-size: 6vw;
+    float: right;
+    margin-top: 1vw;
+    margin-right: 20vw;
+    margin-bottom: 3vw;
+  }
+  .aboutme h4 {
+    float: right;
+    max-width: 9999vw;
+    margin: 0;
+    font-size: 2vw;
+    width: 60vw;
+    margin-right: 5vw;
+    margin-bottom: 5vw;
+  }
+
+  .icons {
+    padding-top: 23vw;
+  }
+
+  .landing-text h1 {
+    font-size: 6vw;
+    float: left;
+
+  }
+  .landing-text {
+
+  }
+
+  h2, h3, i, p {
+    font-size: 3vw;
+
+  }
+
+  .landingpic {
+    height: 70vw;
+  }
+
   .cardImage {
     height: 40vw;
     width: 60vw;
@@ -290,14 +438,9 @@ img {
     width: 60vw;
     height: 10vw;
   }
-  .landing-text h1 h3 {
-    font-size: 2px;
 
-  }
 
-  .text-box h3{
-    bottom: 1vw;
-  }
+
 
 }
 
