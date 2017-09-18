@@ -127,7 +127,7 @@ img {
 
 
 .cardFooter {
-  margin-left: 39.6vw;
+  margin-left: 39.4vw;
   margin-top: 10vw;
   background-color: white;
   width: 20vw;
@@ -144,7 +144,6 @@ img {
   text-align: center;
   margin-top: 1vw;
   font-size: 2vw;
-
 }
 
 .card1 img {
@@ -156,9 +155,9 @@ img {
 
 .card1 h3{
   text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 25px;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  font-size: 2vw;
 }
 .card1 p{
   padding-left: 20px;
